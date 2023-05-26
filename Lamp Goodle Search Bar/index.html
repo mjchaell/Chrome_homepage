@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+<body>
+            <header class="top-header">
+        </header>
+        <!--dust particel-->
+        <div>
+            <div class="starsec"></div>
+            <div class="starthird"></div>
+            <div class="starfourth"></div>
+            <div class="starfifth"></div>
+        </div>
+        <!--Dust particle end--->
+        <div class="lamp__wrap">
+            <div class="lamp">
+            <div class="cable"></div>
+            <div class="cover"></div>
+            <div class="in-cover">
+                <div class="bulb"></div>
+            </div>
+            <div class="light"></div>
+            </div>
+        </div>
+        <!-- END Lamp -->
+        <section class="error">
+            <!-- Content -->
+            <div class="error__content">
+            <div class="error__message message">
+                <h1 class="message__title">GOOGLE</h1>
+                    <div class="bar">
+                        <input class="searchbar" type="search" title="Search" id="sinput" style="color: white;" onsearch="googleSearch()">
+                        <a href="#"><img class="voice" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png" title="Search by Voice"></a>
+                    </div>
+                <p class="message__text" id="txtdesc">@mjchael_</p>
+            <div class="error__nav e-nav">
+                <a href="https://www.instagram.com/buruhphoto_/" target="_blanck">
+                    <i class="fa fa-instagram" id="instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCjU5gh4DS606KPISvJl6wPw" target="_blanck">
+                    <i class="fa fa-youtube-play " id="youtube"></i>
+                </a>
+                <a href="https://twitter.com/ikanbakarkriuk2" target="_blanck" >
+                    <i class="fa fa-twitter" id="twitter"></i>
+                </a>
+                <a href="https://github.com/mjchaell" target="_blanck" >
+                    <i class="fa fa-github-square github" id="github"></i>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blanck" >
+                    <i class="fa fa-google" id="google"></i>
+                </a>
+            </div>
+            </div>
+            <!-- END Content -->
+        </section>
+        </a>
+
+        <script>
+            function googleSearch()
+            {
+                var text=document.getElementById("sinput").value;
+                var cleanQuery = text.replace(" ","+",text);
+                var url='http://www.google.com/search?q='+cleanQuery;
+            
+                window.location.href=url;
+            }
+        </script>
+</body>
+</html>
